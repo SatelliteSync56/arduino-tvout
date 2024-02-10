@@ -2,6 +2,10 @@
 
 # Hosted here to keep it available from Arduino IDE (and for simple download as the original Google Code has been archived).
 
+# This fork adds a crude implementation of a framebuffer for smoother rendering of complex shapes and adds an extra example as well.
+
+Framebuffer currently only supports Arduino Mega 2560. Use 'TVout_FB' for the class instead of 'TVout', and '#include <TVout_FB.h>' instead of '#include <TVout.h>' to enable it. Use TVout::synchro(); to update the frame;
+
 In order to use the library, place this library's folders (`TVout` and `TVoutfonts`) in your `libraries` folder.
 
 This is a library for generating composite video on an ATmega AVR microcontroller. 
